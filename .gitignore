@@ -1,0 +1,6 @@
+node_modules
+dist
+.DS_Store
+.claude
+# commercial font (Pangram Pangram), kept local only
+public/fonts/PPNeueMontreal-*

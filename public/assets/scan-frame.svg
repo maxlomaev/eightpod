@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Scan Frame" clip-path="url(#clip0_0_21)">
+<path id="Vector" d="M2 40V18C2 9 9 2 18 2H40M160 2H182C191 2 198 9 198 18V40M198 160V182C198 191 191 198 182 198H160M40 198H18C9 198 2 191 2 182V160" stroke-width="4" stroke-linecap="round" stroke="white"/>
+</g>
+<defs>
+<clipPath id="clip0_0_21">
+<rect width="200" height="200" fill="white"/>
+</clipPath>
+</defs>
+</svg>

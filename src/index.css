@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("/fonts/PPNeueMontreal-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("/fonts/PPNeueMontreal-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter Local";
+  src: url("/fonts/Inter.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@theme {
+  --font-text: "PP Neue Montreal", "Inter Local", system-ui, sans-serif;
+  --font-num: "Oswald", "PP Neue Montreal", sans-serif;
+  --font-inter: "Inter Local", "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: #0d0d12;
+    color: #fff;
+    font-family: var(--font-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* the shared brand gradient used across Rest Pod screens */
+.grad-x {
+  background-image: linear-gradient(90deg, #3b5cdb 0%, #8c61ed 55%, #f5a37a 100%);
+}
+.grad-y {
+  background-image: linear-gradient(180deg, #3b5cdb 0%, #8c61ed 55%, #f5a37a 100%);
+}
+.grad-y-rev {
+  background-image: linear-gradient(180deg, #f5a37a 0%, #3b5cdb 100%);
+}
+
+/* gradient 1.5px stroke for the selected slot (09) */
+.grad-border {
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(rgba(16, 16, 22, 1), rgba(16, 16, 22, 1)) padding-box,
+    linear-gradient(90deg, #3b5cdb 0%, #8c61ed 55%, #f5a37a 100%) border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
